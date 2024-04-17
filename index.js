@@ -18,7 +18,7 @@ const populateSchema = {
   }
 }
 
-function bzmbHandlebars(fastify, options) {
+async function bzmbHandlebars(fastify, options) {
   fastify.post(
     "/bzmb-handlebars-populate",
     { schema: populateSchema },
